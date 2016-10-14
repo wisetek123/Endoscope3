@@ -1,0 +1,218 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF" >
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/topbar" />
+
+    <LinearLayout
+        android:id="@+id/patient_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topbar"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/patient_nameTV"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/patientName"
+            android:textColor="#444"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/patient_nameET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_bg"
+            android:hint="姓名"
+            android:padding="5dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/must"
+            android:textColor="#f00"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/patient_name"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/sexTV"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/sex"
+            android:textColor="#444"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/sexRG"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/male" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/female" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/must"
+            android:textColor="#f00"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sex"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/ageTV"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/age"
+            android:textColor="#444"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/ageET"
+            android:hint="年龄"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:background="@drawable/white_bg"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/must"
+            android:textColor="#f00"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/telTV"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/age"
+        android:layout_margin="5dp"
+        android:text="@string/telphone"
+        android:textColor="#444"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/telET"
+        android:hint="电话"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/age"
+        android:layout_margin="5dp"
+        android:singleLine="true"
+        android:maxLength="11"
+        android:layout_toRightOf="@id/telTV"
+        android:background="@drawable/white_bg"
+        android:digits="0123456789-"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/adrTV"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/telTV"
+        android:layout_margin="5dp"
+        android:text="@string/address"
+        android:textColor="#444"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/adrET"
+        android:hint="地址"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/telTV"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/adrTV"
+        android:background="@drawable/white_bg"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/IDnumTV"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adrTV"
+        android:layout_margin="5dp"
+        android:text="@string/IDnum"
+        android:textColor="#444"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/IDnumET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adrTV"
+        android:layout_margin="5dp"
+        android:hint="身份证"
+        android:layout_toRightOf="@id/IDnumTV"
+        android:background="@drawable/white_bg"
+        android:digits="0123456789X"
+        android:maxLength="18"
+        android:padding="5dp"
+        
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/addPatientBT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IDnumTV"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/blue_bg"
+        android:text="@string/add" />
+
+</RelativeLayout>

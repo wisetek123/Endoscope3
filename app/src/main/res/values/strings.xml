@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Endoscope</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="regist">注册</string>
+    <string name="login">登录</string>
+    <string name="confirmPassword">确认密码</string>
+    <string name="patientName">姓名:</string>
+    <string name="patientName1">姓名</string>
+    <string name="pathogeny">病因</string>
+    <string name="time">时间</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="age">年龄:</string>
+    <string name="telphone">电话:</string>
+    <string name="address">地址:</string>
+    <string name="age1">年龄</string>
+    <string name="telphone1">电话</string>
+    <string name="address1">地址</string>
+    <string name="sex">性别:</string>
+    <string name="add">添加</string>
+    <string name="pno">编号:</string>
+    <string name="date">日期:</string>
+    <string name="symptom">症状:</string>
+    <string name="noMoreSymptom">该病人暂无诊断信息！</string>
+    <string name="noMorePatient">暂无病人信息！</string>
+    <string name="symptomDescription">症状描述:</string>
+    <string name="diagnosisResult">诊断结果:</string>
+    <string name="save">保存</string>
+    <string name="result">结果:</string>
+    <string name="IDnum">身份证:</string>
+    <string name="IDnum1">身份证</string>
+    <string name="must">*</string>
+    <string name="update">修改</string>
+    <string name="search">搜索</string>
+    <string name="noMoreInfo">没有相关信息，请检查搜索条件是否选择正确！</string>
+    
+    <string name="photo">照片</string>
+    <string name="video">录像</string>
+    <string name="browse">浏览</string>
+    <string name="inputDiagnosisResult">请输入诊断结果!</string>
+    <string name="inputSymptomDescription">请输入症状描述!</string>
+    <string name="addPatient">添加病人</string>
+    <string name="inputName">请输入病人姓名!</string>
+    <string name="inputSex">请选择病人性别!</string>
+    <string name="inputAge">请输入病人年龄!</string>
+    <string name="inputUsername">请输入账号!</string>
+    <string name="inputPassword">请输入密码!</string>
+    <string name="wrongUsername">账号不存在!</string>
+    <string name="wrongPassword">密码错误!</string>
+    <string name="pressAgain">再按一次退出</string>
+    <string name="patientInfo">病人信息</string>
+    <string name="prompt">提示</string>
+    <string name="isQuit">是否退出当前账号？</string>
+    <string name="isDel">是否删除该病人所有信息？</string>
+    <string name="isUpload">是否上传该条诊断记录？</string>
+    <string name="isDelPhoto">是否删除该照片？</string>
+    <string name="isDelvideo">是否删除该录像？</string>
+    <string name="yes">确定</string>
+    <string name="no">取消</string>
+    <string name="inputSearch">请输入搜索内容！</string>
+    <string name="usernameIsTeken">账号已存在，请重新输入!</string>
+    <string name="passwordNotSame">两次输入密码不一致，请重新输入!</string>
+	<string name="changePatientInfo">修改病人信息</string>
+    
+    <string-array name="search_spin">
+        <item>编号</item>
+        <item>姓名</item>
+        <item>地址</item>
+    </string-array>
+
+    <string name="diagnosis">诊断</string>
+    <string name="check">检查</string>
+    <string name="delete">删除</string>
+    <string name="cancel">撤销</string>
+    <string name="noReadPermession">没有读取权限</string>
+    <string name="upToSelect">最多只能选择3张图片</string>
+    <string name="uploading">正在上传</string>
+    <string name="registing">正在注册</string>
+    <string name="addPhoto">添加图片</string>
+    <string name="success">上传成功!</string>
+    <string name="filenotexsit">文件不存在!</string>
+    <string name="sdcarderror">SDCard不存在或者写保护!</string> 
+    <string name="upload">上传</string>
+    <string name="photosuccess">拍照成功!</string>
+    <string name="uploadsuccess">上传成功!</string>
+    
+    <string name="register_password_digits">  
+      
+      ._0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ   
+      
+    </string>  
+    <string name = "devicelist">设备列表</string>
+    <string name = "selectmode">选择连接方式！</string>
+    <string name = "usb">有线连接</string>
+    <string name = "wifi">无线连接</string>
+
+</resources>

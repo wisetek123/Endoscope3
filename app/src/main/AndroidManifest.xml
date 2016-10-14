@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.endoscope"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".LoadingActivity"
+            android:label="@string/app_name"
+            
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.endoscope.LoginActivity" >
+        </activity>
+        <activity android:name="com.example.endoscope.RegistActivity" >
+        </activity>
+        <activity android:name="com.example.endoscope.MainActivity" >
+        </activity>
+        <activity android:name="com.example.endoscope.AddPatientActivity" >
+        </activity>
+        <activity android:name="com.example.endoscope.PatientActivity" >
+        </activity>
+        <activity android:name="com.example.endoscope.AddDiagnosisActivity" >
+        </activity>
+        <activity android:name="com.example.endoscope.UpdatePatientActivity" >
+        </activity>
+        <activity android:name="com.example.endoscope.QueryPatientActivity" >
+        </activity>
+        <activity
+            android:name="com.example.endoscope.CameraActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity android:name = "com.example.endoscope.UpdateDiagnosisActivity">
+        </activity>
+        <activity android:name = "com.example.endoscope.UpdateImage">
+        </activity>
+        <activity android:name="com.example.endoscope.BrowseActivity" >
+        </activity>
+        <activity android:name="com.example.endoscope.PhotoWallActivity" >
+        </activity>
+        <activity
+            android:name="com.example.endoscope.PhotoActivity"
+             android:screenOrientation="landscape">
+        </activity>
+        <activity android:name="com.example.endoscope.VideoWallActivity" >
+        </activity>
+        <activity android:name="com.example.endoscope.VideoActivity"  android:screenOrientation="landscape">
+        </activity>
+         <activity android:name="com.example.endoscope.SelectImageActivity" >
+        </activity>
+         <activity android:name="com.example.endoscope.ImgsActivity" >
+             
+        </activity>
+        <activity android:name="com.example.endoscope.Upload" >
+             
+        </activity>
+        <activity android:name= "com.example.endoscope.SelectActivity"/>
+        <activity
+            android:name = "com.example.endoscope.UsbVideoActivity"
+            android:screenOrientation="landscape" >
+                <!--
+				<action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+                <action android:name="android.hardware.usb.action.USB_PERMISSION" />
+               !-->
+            
+        </activity>
+
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+</manifest>

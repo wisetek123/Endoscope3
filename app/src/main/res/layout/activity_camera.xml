@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF" >
+
+    <SurfaceView
+        android:id="@+id/SurfaceView01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </SurfaceView>
+
+    <Chronometer
+        android:id="@+id/sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:format="00:00:00"
+        android:textColor="#ffffffff"
+        android:textSize="65sp"
+        android:visibility="gone"
+         />
+
+    <LinearLayout
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:paddingBottom="50dp"
+        android:paddingRight="10dp"
+        android:paddingTop="50dp" >
+
+        <ImageButton
+            android:id="@+id/photo"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:src="@drawable/photo_selector" />
+
+        <ImageButton
+            android:id="@+id/video"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_below="@id/photo"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:src="@drawable/video_selector" />
+
+        <ImageButton
+            android:id="@+id/browse"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_below="@id/video"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:src="@drawable/browse_selector" />
+        <ImageButton
+            android:id="@+id/wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_below="@id/browse"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:src="@drawable/main_setting_state" />
+            "
+    </LinearLayout>
+
+</RelativeLayout>

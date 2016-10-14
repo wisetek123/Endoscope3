@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zorx="http://schemas.android.com/apk/res/com.example.endoscope"
+    android:layout_width="match_parent"
+    android:layout_height="50dp" >
+
+    <com.example.endoscope.view.Topbar
+        android:id="@+id/id_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        zorx:leftBackground="#FF77C0FE"
+        zorx:leftSrc="@drawable/ic_launcher"
+        zorx:rightBackground="#FF77C0FE"
+        zorx:rightSrc="@drawable/ic_launcher"
+        zorx:titleTextColor="#FF000000"
+        zorx:titleTextSize="18px"
+        zorx:toptitle="" >
+    </com.example.endoscope.view.Topbar>
+
+</RelativeLayout>

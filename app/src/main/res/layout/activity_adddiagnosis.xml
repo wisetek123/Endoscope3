@@ -1,0 +1,164 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF" >
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/topbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topbar"
+        android:padding="5dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/patient_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/Pno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/pno"
+                    android:textColor="#898989"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/PnoET"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_bg"
+                    android:editable="false"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp" />
+
+                <TextView
+                    android:id="@+id/Psex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/sex"
+                    android:textColor="#898989"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/PsexET"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_bg"
+                    android:editable="false"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp" />
+
+                <TextView
+                    android:id="@+id/Page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/age"
+                    android:textColor="#898989"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/PageET"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_bg"
+                    android:editable="false"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/symptom_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/patient_info"
+                android:layout_margin="5dp"
+                android:text="@string/symptomDescription"
+                android:textColor="#444"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:id="@+id/Rel_symptom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/symptom_des" >
+
+                <EditText
+                    android:id="@+id/symptom_desET"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/white_bg"
+                    android:gravity="top"
+                    android:padding="5dp" />
+
+                <ImageButton
+                    android:id="@+id/bt_add_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#00000000"
+                    android:src="@drawable/more" />
+
+                <GridView
+                    android:id="@+id/show_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/symptom_desET"
+                    android:numColumns="4" >
+                </GridView>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/diagnosis_res"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Rel_symptom"
+                android:layout_margin="5dp"
+                android:text="@string/diagnosisResult"
+                android:textColor="#444"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/diagnosis_resET"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/diagnosis_res"
+                android:layout_margin="5dp"
+                android:background="@drawable/white_bg"
+                android:gravity="top"
+                android:padding="5dp" />
+
+            <Button
+                android:id="@+id/addDiagnosisBT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/diagnosis_resET"
+                android:layout_margin="5dp"
+                android:background="@drawable/blue_bg"
+                android:text="@string/save" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

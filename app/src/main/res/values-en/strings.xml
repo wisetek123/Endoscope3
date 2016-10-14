@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Endoscope</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="regist">Sign Up</string>
+    <string name="login">Log In</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="patientName">Name:</string>
+    <string name="patientName1">Name</string>
+    <string name="pathogeny">Pathogeny</string>
+    <string name="time">Time</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="age">Age:</string>
+    <string name="telphone">Tel:</string>
+    <string name="address">Address:</string>
+    <string name="age1">Age</string>
+    <string name="telphone1">Tel</string>
+    <string name="address1">Address</string>
+    <string name="sex">Sex:</string>
+    <string name="add">Add</string>
+    <string name="pno">Number:</string>
+    <string name="date">Date:</string>
+    <string name="symptom">Symptom:</string>
+    <string name="noMoreSymptom">No diagnostic information ！</string>
+    <string name="noMorePatient">No patient information ！</string>
+    <string name="symptomDescription">Symptom Description:</string>
+    <string name="diagnosisResult">Diagnosis Result:</string>
+    <string name="save">Save</string>
+    <string name="result">Result:</string>
+    <string name="IDnum">ID Card:</string>
+    <string name="IDnum1">ID Card</string>
+    <string name="must">*</string>
+    <string name="update">Change</string>
+    <string name="search">Search</string>
+    <string name="noMoreInfo">No information ！</string>
+    
+    <string name="photo">Photo</string>
+    <string name="video">Video</string>
+    <string name="browse">Browse</string>
+    <string name="inputDiagnosisResult">Please input diagnosis result !</string>
+    <string name="inputSymptomDescription">Please input symptom description !</string>
+    <string name="addPatient">Add Patient</string>
+    <string name="inputName">Please input name !</string>
+    <string name="inputSex">Please input sex !</string>
+    <string name="inputAge">Please input age !</string>
+    <string name="inputUsername">Please input username !</string>
+    <string name="inputPassword">Please input password !</string>
+    <string name="wrongUsername">Username does not exist !</string>
+    <string name="wrongPassword">Password error !</string>
+    <string name="pressAgain">Then click one exit procedure !</string>
+    <string name="patientInfo">Patient Information</string>
+    <string name="prompt">Prompt</string>
+    <string name="isQuit">Whether to quit ?</string>
+    <string name="isDel">Whether to delete all information about this patient ?</string>
+    <string name="isUpload">Whether to upload this diagnosis information ?</string>
+    <string name="isDelPhoto">Whether to delete this photo ?</string>
+    <string name="isDelvideo">Whether to delete this video ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="inputSearch">Please input the search content !</string>
+    <string name="usernameIsTeken">Username is already taken !</string>
+    <string name="passwordNotSame">Two passwords are not consistent !</string>
+	<string name="changePatientInfo">Change Patient Information</string>
+    
+    <string-array name="search_spin">
+        <item>Number</item>
+        <item>Name</item>
+        <item>Address</item>
+    </string-array>
+
+    <string name="diagnosis">Diagnosis</string>
+    <string name="check">Check</string>
+    <string name="delete">Delete</string>
+	<string name="cancel">Cancel</string>
+	<string name="noReadPermession">No read permission</string>
+	<string name="upToSelect">Up to three pictures can be selected</string>
+	<string name="uploading">Uploding</string>
+	<string name="registing">Registing</string>
+	<string name="addPhoto">Add Photo</string>
+	<string name="success">Upload Success!</string>
+    <string name="filenotexsit">File is not exsited!</string>
+    <string name="sdcarderror">SDCard is error!</string> 
+    <string name="upload">Upload</string>
+	<string name="photosuccess">Photo success!</string>
+	<string name="uploadsuccess">Upload success!</string>
+	<string name="action_settings">Settings</string>
+	<string name= "devicelist">DeviceList</string>
+	 <string name = "selectmode">Select your connection mode！</string>
+    <string name = "usb">Usb</string>
+    <string name = "wifi">Wifi</string>
+	
+</resources>

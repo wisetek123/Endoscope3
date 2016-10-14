@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF" >
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/search_bg"
+            android:drawableLeft="@drawable/search"
+            android:padding="5dp"
+            android:textColor="#444"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/searchBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:entries="@array/search_spin" />
+
+        <Button
+            android:id="@+id/searchBT"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/search_bg"
+            android:text="@string/search"
+            android:textColor="#444"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/patientSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menu"
+        android:layout_margin="5dp"
+        android:text="@string/noMoreInfo"
+        android:textColor="#898989"
+        android:textSize="18sp"
+        android:visibility="invisible" />
+
+    <ListView
+        android:id="@+id/patient_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/patientSign" >
+    </ListView>
+
+</RelativeLayout>

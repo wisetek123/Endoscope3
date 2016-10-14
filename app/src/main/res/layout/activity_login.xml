@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF" >
+
+    <EditText
+        android:id="@+id/userET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="150dp"
+        android:singleLine="true"
+        android:background="@drawable/white_bg"
+        android:drawableLeft="@drawable/user"
+        android:hint="@string/username" />
+
+    <EditText
+        android:id="@+id/pwdET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userET"
+        android:layout_margin="5dp"
+        android:singleLine="true"
+        android:background="@drawable/white_bg"
+        android:drawableLeft="@drawable/pwd"
+        android:digits="@string/register_password_digits"
+        android:hint="@string/password"
+        android:password="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pwdET"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/to_registBT"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/blue_bg"
+            android:text="@string/regist" />
+
+        <Button
+            android:id="@+id/loginBT"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/blue_bg"
+            android:text="@string/login" />
+    </LinearLayout>
+
+</RelativeLayout>

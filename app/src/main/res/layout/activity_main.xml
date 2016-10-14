@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF" >
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/topbar" />
+
+    
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/topbar"
+        android:layout_margin="5dp"
+        android:background="@drawable/search_bg"
+        android:text="@string/search"
+        android:textColor="#444"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/patientSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search"
+        android:layout_margin="5dp"
+        android:text="@string/noMorePatient"
+        android:textColor="#898989"
+        android:textSize="18sp" />
+
+    <ListView
+        android:id="@+id/patient_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/patientSign" > </ListView>
+
+       <RelativeLayout
+            android:id="@+id/patient_rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#ffffff" 
+            android:visibility="gone"
+            >
+
+
+
+            <Button
+                android:id="@+id/patient_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+				android:background="@drawable/delete"
+
+                android:textSize="20sp" />
+        </RelativeLayout>
+   
+
+</RelativeLayout>

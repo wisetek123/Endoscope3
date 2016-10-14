@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF" >
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/topbar" />
+
+    <LinearLayout
+        android:id="@+id/patient_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topbar"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/Pno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/pno"
+            android:textColor="#898989"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/PnoET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_bg"
+            android:editable="false"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+        <TextView
+            android:id="@+id/Psex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/sex"
+            android:textColor="#898989"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/PsexET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_bg"
+            android:editable="false"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+        <TextView
+            android:id="@+id/Page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/age"
+            android:textColor="#898989"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/PageET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_bg"
+            android:editable="false"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/patient_info"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/check"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/search_bg"
+            android:text="@string/check"
+            android:textColor="#444"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/diagnosis"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/search_bg"
+            android:text="@string/diagnosis"
+            android:textColor="#444"
+            android:textSize="18sp" />
+        
+        <Button
+            android:id="@+id/browse"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/search_bg"
+            android:text="@string/browse"
+            android:textColor="#444"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/diagnosisSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menu"
+        android:layout_margin="5dp"
+        android:text="@string/noMoreSymptom"
+        android:textColor="#898989"
+        android:textSize="18sp" />
+
+    <ListView
+        android:id="@+id/diagnosis_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/diagnosisSign" >
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,171 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF" >
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/topbar" />
+
+    <TextView
+        android:id="@+id/new_patient_nameTV"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topbar"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/patientName"
+        android:textColor="#444"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/new_patient_nameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topbar"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="50dp"
+        android:hint="姓名"
+        android:layout_toRightOf="@id/new_patient_nameTV"
+        android:background="@drawable/white_bg"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/new_sexTV"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_patient_nameTV"
+        android:layout_margin="5dp"
+        android:text="@string/sex"
+        android:textColor="#444"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/new_sexRG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@id/new_patient_nameTV"
+        android:layout_toRightOf="@id/new_sexTV"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/new_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/male" />
+
+        <RadioButton
+            android:id="@+id/new_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/new_ageTV"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_sexTV"
+        android:layout_margin="5dp"
+        android:text="@string/age"
+        android:textColor="#444"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/new_ageET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_sexTV"
+        android:layout_margin="5dp"
+        android:hint="年龄"
+        android:layout_toRightOf="@id/new_ageTV"
+        android:background="@drawable/white_bg"
+        android:digits="0123456789"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/new_telTV"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_ageTV"
+        android:layout_margin="5dp"
+        android:text="@string/telphone"
+        android:textColor="#444"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/new_telET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_ageTV"
+        android:layout_margin="5dp"
+        android:hint="电话"
+        android:layout_toRightOf="@id/new_telTV"
+        android:background="@drawable/white_bg"
+        android:digits="0123456789-"
+        android:maxLength="11"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/new_adrTV"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_telTV"
+        android:layout_margin="5dp"
+        android:text="@string/address"
+        android:textColor="#444"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/new_adrET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_telTV"
+        android:layout_margin="5dp"
+        android:hint="地址"
+        android:layout_toRightOf="@id/new_adrTV"
+        android:background="@drawable/white_bg"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/new_IDnumTV"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_adrTV"
+        android:layout_margin="5dp"
+        android:text="@string/IDnum"
+        android:textColor="#444"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/new_IDnumET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_adrTV"
+        android:layout_margin="5dp"
+        android:hint="身份证"
+        android:layout_toRightOf="@id/new_IDnumTV"
+        android:background="@drawable/white_bg"
+        android:digits="0123456789X"
+        android:maxLength="18"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/updatePatientBT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_IDnumTV"
+        android:layout_margin="5dp"
+        android:background="@drawable/blue_bg"
+        android:text="@string/update" />
+
+</RelativeLayout>

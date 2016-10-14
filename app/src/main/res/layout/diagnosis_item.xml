@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/diagnosis_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:singleLine="true"
+        android:text="@string/date"
+        android:textColor="#898989"
+        android:textSize="16sp" />
+    
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/diagnosis_date"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="#444"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/diagnosis_symptom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/diagnosis_date"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/symptom"
+        android:textColor="#898989"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/symptom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/diagnosis_date"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/diagnosis_symptom"
+        android:text=""
+        android:textColor="#444"
+        android:textSize="16sp" />
+
+    <LinearLayout 
+        android:id="@+id/lin"
+        android:layout_below="@+id/symptom"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal">
+        <ImageView 
+            android:id="@+id/pict_one"
+            android:layout_marginLeft="50dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+        <ImageView 
+            android:id="@+id/pict_two"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+        <ImageView 
+            android:id="@+id/pict_three"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/diagnosis_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lin"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/result"
+        android:textColor="#898989"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lin"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/diagnosis_result"
+        android:text=""
+        android:textColor="#444"
+        android:textSize="16sp" />
+
+</RelativeLayout>

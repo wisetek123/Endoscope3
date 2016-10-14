@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF" >
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/topbar" />
+
+    <EditText
+        android:id="@+id/new_userET"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topbar"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/white_bg"
+        android:drawableLeft="@drawable/user"
+        android:hint="@string/username" />
+
+    <EditText
+        android:id="@+id/new_pwdET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_userET"
+        android:layout_margin="5dp"
+        android:singleLine="true"
+        android:background="@drawable/white_bg"
+        android:drawableLeft="@drawable/pwd"
+        android:digits="@string/register_password_digits"
+        android:hint="@string/password"
+        android:password="true" />
+
+    <EditText
+        android:id="@+id/confirm_pwdET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_pwdET"
+        android:layout_margin="5dp"
+        android:singleLine="true"
+        android:background="@drawable/white_bg"
+        android:drawableLeft="@drawable/pwd"
+        android:hint="@string/confirmPassword"
+        android:digits="@string/register_password_digits"
+        android:password="true" />
+
+    <Button
+        android:id="@+id/registBT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/confirm_pwdET"
+        android:layout_margin="5dp"
+        android:background="@drawable/blue_bg"
+        android:text="@string/regist" />
+
+</RelativeLayout>
